@@ -3,6 +3,7 @@
 \usepackage{here}
 \usepackage{lastpage}
 \usepackage{fancyhdr}
+\usepackage{fancybox}
 % 余白の設定
 \usepackage[top=25truemm,bottom=25truemm,left=25truemm,right=25truemm]{geometry}
 
@@ -19,6 +20,8 @@
 
 % title page
 \begin{titlepage}
+% 枠線
+\thisfancypage{\doublebox}{}
 \begin{center}
 \vspace*{20pt}
 \includegraphics[width=\linewidth]{images/logo.png}\\
