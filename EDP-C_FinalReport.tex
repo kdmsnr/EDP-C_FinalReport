@@ -1,0 +1,64 @@
+\documentclass[a4paper, 10pt]{jsarticle}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{here}
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+% 余白の設定
+\usepackage[top=25truemm,bottom=25truemm,left=25truemm,right=25truemm]{geometry}
+
+\input{team}
+
+% Header and Footer
+\pagestyle{fancy}
+\lhead{}
+\rhead{Engineering Design Project C 2015 [\team]}
+\cfoot{\thepage{}/{}\pageref{LastPage}}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\begin{document}
+
+% title page
+\begin{titlepage}
+\begin{center}
+\vspace*{20pt}
+\includegraphics[width=\linewidth]{images/logo.png}\\
+\vspace*{100pt}
+{\huge 2015年度}\\
+\vspace*{20pt}
+{\huge エンジニアリングデザインプロジェクトC}\\
+\vspace*{20pt}
+{\huge （EDP-C）}\\
+\vspace*{20pt}
+{\huge 最終報告書}\\
+\vspace{50pt}
+{\large 2016年2月20日}\\
+\vspace{75pt}
+\begin{table}[H]
+\centering
+\begin{tabular}{|r|l|} \hline
+チーム名  & \team \\ \hline
+チームメンバー  & \begin{tabular}[c]{@{}l@{}}
+  \members
+\end{tabular} \\
+\hline
+\end{tabular}
+\end{table}
+\end{center}
+\end{titlepage}
+
+\input{0-abstract}
+\clearpage
+
+\tableofcontents
+\clearpage
+
+\input{1-context}
+\input{2-requirements}
+\input{3-development}
+\input{4-specifications}
+\input{5-furtherwork}
+\input{6-projectmanagement}
+\input{7-bib}
+
+% end of document
+\end{document}
